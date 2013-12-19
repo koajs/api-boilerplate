@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var program = require('commander');
+var app = require('..');
+
+// options
+
+program
+  .option('-h, --host <host>', 'specify the host [0.0.0.0]', '0.0.0.0')
+  .option('-p, --port <port>', 'specify the port [4000]', '4000')
+  .parse(process.argv);
+
+// listen
+
+app.listen(program.port, program.host);
+console.log('Listening on %s:%s', program.host, program.port);
