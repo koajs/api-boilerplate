@@ -16,3 +16,13 @@ describe('GET /stats', function(){
     .end(done);
   })
 })
+
+describe('GET /stats/:name', function(){
+  it('should respond with a single stat', function(done){
+    var app = api();
+
+    request(app.listen())
+    .get('/stats/requests')
+    .expect('100000', done);
+  })
+})
