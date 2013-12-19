@@ -22,6 +22,10 @@
 
 ```
 
+## Structure
+
+  Resources and associated tests are defined in ./api
+
 # License
 
   MIT
