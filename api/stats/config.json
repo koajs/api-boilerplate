@@ -1,5 +1,6 @@
 {
   "routes": {
-    "GET /stats": "get"
+    "GET /stats": "all",
+    "GET /stats/:name": "get",
   }
 }
