@@ -3,6 +3,7 @@
  * Module dependencies.
  */
 
+var load = require('./lib/load');
 var koa = require('koa');
 
 /**
@@ -21,8 +22,7 @@ module.exports = api;
 
 function api(opts) {
   opts = opts || {};
-
   var app = koa();
-
+  load(app, __dirname + '/api');
   return app;
 }
