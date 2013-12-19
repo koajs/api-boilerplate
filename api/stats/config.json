@@ -1,4 +1,6 @@
 {
+  "name": "stats",
+  "description": "api statistics",
   "routes": {
     "GET /stats": "all",
     "GET /stats/:name": "get"

@@ -1,1 +1,4 @@
-{}
+{
+  "name": "users",
+  "description": "user account resource"
+}
