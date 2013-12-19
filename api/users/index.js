@@ -1,5 +1,11 @@
 
 /**
+ * Module dependencies.
+ */
+
+var parse = require('co-body');
+
+/**
  * This file illustrates using resourceful
  * routing using the koa-router module.
  */
@@ -38,5 +44,17 @@ exports.index = function *(){
 
 exports.show = function *(name){
   this.body = users[name];
+};
+
+/**
+ * POST a new user.
+ */
+
+exports.create = function *(name){
+  var body = yield parse(this);
+  if (!body.name) this.throw(400, '.name required');
+  users[body.name] = body;
+  this.status = 201;
+  this.body = 'added!';
 };
 

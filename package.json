@@ -18,7 +18,8 @@
     "koa": "~0.1.0",
     "commander": "~2.1.0",
     "debug": "*",
-    "koa-router": "~1.6.0"
+    "koa-router": "~1.6.0",
+    "co-body": "0.0.1"
   },
   "devDependencies": {
     "mocha": "*",
