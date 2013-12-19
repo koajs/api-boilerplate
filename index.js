@@ -9,6 +9,12 @@ var load = require('./lib/load');
 var koa = require('koa');
 
 /**
+ * Environment.
+ */
+
+var env = process.env.NODE_ENV || 'development';
+
+/**
  * Expose `api()`.
  */
 
@@ -28,7 +34,7 @@ function api(opts) {
 
   // middleware
 
-  app.use(logger());
+  if ('test' != env) app.use(logger());
   app.use(router(app));
 
   // boot
