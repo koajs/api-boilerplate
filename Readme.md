@@ -1,17 +1,24 @@
 
-# name
+# Koa API Boilerplate
 
-  description
+  Boilerplate API application structure - at least one flavour.
 
 ## Installation
 
-```
-$ npm install name
+  cloneeeee
+
+## Usage
+
 ```
 
-## Example
+  Usage: api [options]
 
-```js
+  Options:
+
+    -h, --help            output usage information
+    -H, --host <host>     specify the host [0.0.0.0]
+    -p, --port <port>     specify the port [4000]
+    -b, --backlog <size>  specify the backlog size [511]
 
 ```
 

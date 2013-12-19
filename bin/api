@@ -10,7 +10,7 @@ var api = require('..');
 // options
 
 program
-  .option('-h, --host <host>', 'specify the host [0.0.0.0]', '0.0.0.0')
+  .option('-H, --host <host>', 'specify the host [0.0.0.0]', '0.0.0.0')
   .option('-p, --port <port>', 'specify the port [4000]', '4000')
   .option('-b, --backlog <size>', 'specify the backlog size [511]', '511')
   .parse(process.argv);
