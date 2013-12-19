@@ -32,7 +32,7 @@
 
 ## API Versioning
 
-  Use a proxy and launch new `api(1)` programs, don't version
+  Use a proxy for `/v1`, `/v2` etc and launch new `api(1)` programs, don't version
   in the same application, it's brittle, bloaty and pointless.
 
 # License
