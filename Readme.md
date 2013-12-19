@@ -26,6 +26,10 @@
 
   Resources and associated tests are defined in ./api
 
+##  Tests
+
+  Run `make test`
+
 # License
 
   MIT
