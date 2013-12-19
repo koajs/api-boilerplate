@@ -30,6 +30,11 @@
 
   Run `make test`
 
+## API Versioning
+
+  Use a proxy and launch new `api(1)` programs, don't version
+  in the same application, it's brittle and pointless.
+
 # License
 
   MIT
