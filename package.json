@@ -9,16 +9,16 @@
     "api"
   ],
   "dependencies": {
-    "koa-response-time": "~1.0.0",
-    "koa-conditional-get": "~1.0.0",
+    "koa-response-time": "~1.0.1",
+    "koa-conditional-get": "~1.0.1",
     "koa-ratelimit": "~1.0.1",
-    "koa-compress": "0.0.1",
-    "koa-logger": "~1.0.1",
-    "koa-etag": "~1.1.0",
-    "koa": "~0.1.0",
+    "koa-compress": "1.0.0",
+    "koa-logger": "~1.1.0",
+    "koa-etag": "~1.2.1",
+    "koa": "~0.1.2",
     "commander": "~2.1.0",
     "debug": "*",
-    "koa-router": "~1.6.0",
+    "koa-router": "~2.0.1",
     "co-body": "0.0.1"
   },
   "devDependencies": {
