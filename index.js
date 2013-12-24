@@ -3,6 +3,7 @@
  * Module dependencies.
  */
 
+var responseTime = require('koa-response-time');
 var logger = require('koa-logger');
 var router = require('koa-router');
 var load = require('./lib/load');
@@ -35,6 +36,7 @@ function api(opts) {
   // middleware
 
   if ('test' != env) app.use(logger());
+  app.use(responseTime());
   app.use(router(app));
 
   // boot
