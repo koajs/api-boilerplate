@@ -5,6 +5,7 @@
 
 var responseTime = require('koa-response-time');
 var ratelimit = require('koa-ratelimit');
+var compress = require('koa-compress');
 var logger = require('koa-logger');
 var router = require('koa-router');
 var load = require('./lib/load');
@@ -42,6 +43,10 @@ function api(opts) {
   // x-response-time
 
   app.use(responseTime());
+
+  // compression
+
+  app.use(compress());
 
   // rate limiting
 
