@@ -4,9 +4,11 @@
  */
 
 var responseTime = require('koa-response-time');
+var ratelimit = require('koa-ratelimit');
 var logger = require('koa-logger');
 var router = require('koa-router');
 var load = require('./lib/load');
+var redis = require('redis');
 var koa = require('koa');
 
 /**
@@ -33,10 +35,24 @@ function api(opts) {
   opts = opts || {};
   var app = koa();
 
-  // middleware
+  // logging
 
   if ('test' != env) app.use(logger());
+
+  // x-response-time
+
   app.use(responseTime());
+
+  // rate limiting
+
+  app.use(ratelimit({
+    max: opts.ratelimit,
+    duration: opts.duration,
+    db: redis.createClient()
+  }));
+
+  // routing
+
   app.use(router(app));
 
   // boot

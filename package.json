@@ -19,7 +19,8 @@
     "commander": "~2.1.0",
     "debug": "*",
     "koa-router": "~1.6.0",
-    "co-body": "0.0.1"
+    "co-body": "0.0.1",
+    "redis": "~0.10.0"
   },
   "devDependencies": {
     "mocha": "*",
