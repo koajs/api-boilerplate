@@ -18,7 +18,7 @@
     "koa": "~0.1.2",
     "commander": "~2.1.0",
     "debug": "*",
-    "koa-router": "~2.0.1",
+    "koa-router": "~1.6.0",
     "co-body": "0.0.1"
   },
   "devDependencies": {
