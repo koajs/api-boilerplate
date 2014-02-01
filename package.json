@@ -1,7 +1,7 @@
 {
-  "name": "koa-api-boilderplate",
+  "name": "koa-api-boilerplate",
   "version": "0.0.1",
-  "repository": "koajs/api-boilderplate",
+  "repository": "koajs/api-boilerplate",
   "description": "Koa API boilerplate application",
   "keywords": [
     "koa",
