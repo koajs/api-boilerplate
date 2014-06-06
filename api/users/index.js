@@ -42,8 +42,8 @@ exports.index = function *(){
  * GET user by :name.
  */
 
-exports.show = function *(name){
-  this.body = users[name];
+exports.show = function *(){
+  this.body = users[this.params.user];
 };
 
 /**

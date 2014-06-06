@@ -23,6 +23,6 @@ exports.all = function *(){
  * GET a single stat.
  */
 
-exports.get = function *(name){
-  this.body = stats[name];
+exports.get = function *(){
+  this.body = stats[this.params.name];
 };
