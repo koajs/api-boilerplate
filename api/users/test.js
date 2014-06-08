@@ -14,4 +14,15 @@ describe('GET /users', function(){
       done();
     });
   })
+  it('should respond with users/:id', function(done){
+    var app = api();
+
+    request(app.listen())
+    .get('/users/jane')
+    .end(function(err, res){
+      if (err) return done(err);
+      Object.keys(res.body).should.eql(['name', 'age', 'species']);
+      done();
+    });
+  })
 })
