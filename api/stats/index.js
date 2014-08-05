@@ -2,7 +2,7 @@
 /**
  * This file illustrates how you may map
  * single routes using config.json instead
- * of resoure based routing.
+ * of resource-based routing.
  */
 
 var stats = {
