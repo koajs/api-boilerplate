@@ -16,7 +16,7 @@
     "koa": "~0.6.1",
     "commander": "~2.2.0",
     "debug": "*",
-    "koa-router": "~3.1.4",
+    "koa-router": "~5.3.0",
     "koa-resource-router": "^0.3.3",
     "co-body": "0.0.1",
     "redis": "~0.10.3"
