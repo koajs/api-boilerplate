@@ -22,7 +22,7 @@
     "redis": "~0.10.3"
   },
   "devDependencies": {
-    "mocha": "*",
+    "mocha": "2.4.1",
     "should": "*",
     "supertest": "~0.8.2"
   },
