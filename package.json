@@ -10,14 +10,14 @@
   ],
   "dependencies": {
     "koa-response-time": "~1.0.2",
-    "koa-ratelimit": "~1.0.3",
+    "koa-ratelimit": "~2.0.0",
     "koa-compress": "1.0.7",
     "koa-logger": "~1.2.1",
-    "koa": "~0.6.1",
+    "koa": "~2.2.0",
     "commander": "~2.2.0",
     "debug": "*",
-    "koa-router": "~3.1.4",
-    "koa-resource-router": "^0.3.3",
+    "koa-router": "~3.4.0",
+    "koa-resource-router": "^0.4.0",
     "co-body": "0.0.1",
     "redis": "~0.10.3"
   },
