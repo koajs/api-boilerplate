@@ -13,7 +13,7 @@
     "koa-ratelimit": "~1.0.3",
     "koa-compress": "1.0.7",
     "koa-logger": "~1.2.1",
-    "koa": "~0.6.1",
+    "koa": "~1.4.1",
     "commander": "~2.2.0",
     "debug": "*",
     "koa-router": "~3.1.4",
